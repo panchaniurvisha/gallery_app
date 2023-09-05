@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gallery_app/view/picker_image_screen.dart';
+import 'package:gallery_app/view/sharepreference/set_data_sharepreference.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,6 +18,6 @@ class MyApp extends StatelessWidget {
           useMaterial3: true,
         ),
         debugShowCheckedModeBanner: false,
-        home: const PickerImageScreen());
+        home: const SetDataSharePreference());
   }
 }
