@@ -25,11 +25,15 @@ class DisplayImage extends StatelessWidget {
               borderRadius: BorderRadius.circular(height(context) / 10),
               child: Container(
                   height: height(context) / 10,
+                  width: height(context) / 10,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     border: Border.all(color: Colors.black),
                   ),
-                  child: Image.file(File(userModel.imagePath.toString()))),
+                  child: Image.file(
+                    File(userModel.imagePath.toString()),
+                    fit: BoxFit.fill,
+                  )),
             ),
             AppContainer(
               widget: Text('Name: ${userModel.name}'),
